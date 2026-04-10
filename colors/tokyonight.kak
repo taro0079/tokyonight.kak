@@ -47,11 +47,11 @@ evaluate-commands %sh{
         set-face global StatusLineValue ${green},${status_bg}
         set-face global StatusCursor ${cursor_text},${cursor}
         set-face global Prompt ${blue},${status_bg}
-        set-face global MatchingChar default,default+b
+        set-face global MatchingChar default,${cyan}+b
         set-face global MenuForeground ${fg},${selection}
         set-face global MenuBackground ${fg_dark},${status_bg}
         set-face global MenuInfo ${cyan},${status_bg}
         set-face global Information ${status_bg},${cyan}
         set-face global Error ${fg},${red}
-    "
+"
 }
