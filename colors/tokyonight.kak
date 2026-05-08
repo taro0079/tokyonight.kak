@@ -116,5 +116,33 @@ evaluate-commands %sh{
           set-face global ts_markup_raw ${green}
           set-face global ts_markup_raw_block ${green}
           set-face global ts_markup_raw_inline ${green}
+          # PHP用の拡張ハイライト設定
+
+          # 変数・プロパティ関連
+          # $this や $_POST などのスーパーグローバル/組み込み変数を赤＋イタリックで強調
+          set-face global ts_variable_builtin ${red}+i
+          # オブジェクトのプロパティ ($obj->property) をシアンに
+          set-face global ts_property ${cyan}
+          set-face global ts_variable_other_member ${cyan}
+
+          # クラス・メソッド関連
+          # public, private, static, readonly などのアクセス修飾子
+          set-face global ts_keyword_modifier ${magenta}
+          # namespace, use などのインポート宣言
+          set-face global ts_keyword_import ${cyan}
+          # クラスのメソッド呼び出し ($obj->method()) を青＋ボールドで際立たせる
+          set-face global ts_function_method ${blue}+b
+
+          # 型・キーワード関連
+          # int, string, bool, array などの組み込み型を黄色に
+          set-face global ts_type_builtin ${yellow}
+          # try, catch, throw, finally などの例外処理キーワード
+          set-face global ts_keyword_exception ${magenta}
+
+          # タグ・定数
+          # <?php, ?> のタグを赤色にしてファイル内でくっきり分ける
+          set-face global ts_tag ${red}
+          # true, false などの真偽値定数をオレンジ＋イタリック
+          set-face global ts_constant_builtin_boolean ${orange}+i
 "
 }
