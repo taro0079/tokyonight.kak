@@ -53,5 +53,49 @@ evaluate-commands %sh{
         set-face global MenuInfo ${cyan},${status_bg}
         set-face global Information ${status_bg},${cyan}
         set-face global Error ${fg},${red}
+        set-face global ts_keyword ${magenta}+i
+          set-face global ts_keyword_control ${red}
+          set-face global ts_keyword_control_return ${red}+b
+          set-face global ts_keyword_function ${magenta}
+          set-face global ts_keyword_operator ${cyan}
+          set-face global ts_keyword_storage ${magenta}
+          set-face global ts_function ${blue}
+          set-face global ts_function_method ${blue}
+          set-face global ts_function_builtin ${red}
+          set-face global ts_function_macro ${cyan}
+          set-face global ts_constructor ${yellow}
+          set-face global ts_type ${cyan}
+          set-face global ts_type_builtin ${red}
+          set-face global ts_namespace ${magenta}
+          set-face global ts_variable ${fg}
+          set-face global ts_variable_builtin ${red}
+          set-face global ts_variable_parameter ${orange}
+          set-face global ts_variable_other_member ${cyan}
+          set-face global ts_constant ${orange}
+          set-face global ts_constant_builtin ${orange}+b
+          set-face global ts_constant_numeric ${orange}
+          set-face global ts_constant_character ${green}
+          set-face global ts_constant_character_escape ${magenta}
+          set-face global ts_string ${green}
+          set-face global ts_string_special ${magenta}
+          set-face global ts_string_regexp ${cyan}
+          set-face global ts_comment ${comment}+i
+          set-face global ts_punctuation ${fg_dark}
+          set-face global ts_punctuation_bracket ${fg_dark}
+          set-face global ts_punctuation_delimiter ${fg_dark}
+          set-face global ts_operator ${cyan}
+          set-face global ts_attribute ${yellow}
+          set-face global ts_label ${magenta}
+          set-face global ts_tag ${red}
+          set-face global ts_include ${magenta}
+          set-face global ts_special ${cyan}
+          set-face global ts_markup_heading ${blue}+b
+          set-face global ts_markup_bold ${fg}+b
+          set-face global ts_markup_italic ${fg}+i
+          set-face global ts_markup_link_url ${cyan}+u
+          set-face global ts_markup_raw ${green}
+          set-face global ts_diff_plus ${green}
+          set-face global ts_diff_minus ${red}
+          set-face global ts_diff_delta ${yellow}
 "
 }
