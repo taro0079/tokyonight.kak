@@ -97,5 +97,24 @@ evaluate-commands %sh{
           set-face global ts_diff_plus ${green}
           set-face global ts_diff_minus ${red}
           set-face global ts_diff_delta ${yellow}
+          set-face global ts_markup_heading ${blue}+b
+          set-face global ts_markup_bold ${fg}+b
+          set-face global ts_markup_italic ${fg}+i
+          set-face global ts_markup_strikethrough ${comment}+s
+          
+          # リンク関連
+          set-face global ts_markup_link_url ${cyan}+u
+          set-face global ts_markup_link_text ${blue}
+          set-face global ts_markup_link_label ${magenta}
+          
+          # リスト関連
+          set-face global ts_markup_list_unnumbered ${magenta}
+          set-face global ts_markup_list_numbered ${magenta}
+          
+          # 引用・コード関連
+          set-face global ts_markup_quote ${comment}+i
+          set-face global ts_markup_raw ${green}
+          set-face global ts_markup_raw_block ${green}
+          set-face global ts_markup_raw_inline ${green}
 "
 }
